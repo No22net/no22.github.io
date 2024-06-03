@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style:normal;
+    background: #d3d9d4;
+    text-align: center;
+    color: aliceblue;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #d3d9d4;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #2e3944;
+    border-radius: 6px;
+}
+.notop {
+    margin-left: 5px;
+}
+nav {
+    justify-items:flex-end;
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    margin-right: 30px;
+}
+.logoimg {
+    width: 60px;
+    border-radius: 50%;
+}
+nav ul {
+    display: flex;
+    margin: 5px;
+    font-size: 20px;
+}
+nav ul li {
+    margin: 5px;
+    padding: 5px;
+}
+nav ul li:hover {
+    background: #ffffff25;
+    border-radius: 5px;
+}
+.logo {
+    width: 40px ;
+    height: 40px;
+}
+.main-header {
+    text-align: center;
+    color: gold;
+    background: #124E66;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+}
+.link {
+    text-decoration: none;
+    color: rgb(0, 255, 13);
+}
+.link:hover {
+    color : rgb(3, 49, 255);
+    border-radius: 20px;
+    font-weight: bold;
+}
+.main-header li {
+    list-style-type: none;
+}
+.main {
+    text-align: center;
+    margin: 0.3%;
+
+}
+section {
+    margin: 0.3%;
+}
+section#introduction {
+    margin: 2px;
+    background-color: #212A31 ;
+    border-radius: 20px;
+    color: gold;
+    padding: 5px;
+}
+section#why {
+    background-color: rgb(255, 81, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+}
+.hofgoals {
+    color: greenyellow;
+}
+.pofgoals {
+    color: yellow;
+}
+footer li{
+    list-style-type: none;
+    padding: 10px;
+    background: #124e66;
+}
+footer ul{
+    margin: 0;
+    padding: 0;
+
+}
+footer article:last-child {
+    background: seagreen;
+    padding: 10px;
+    color: whitesmoke;
+}
+.power {
+    background-color: darkcyan;
+    padding: 3px;
+}
+.powera {
+    font-size: larger;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px;
+}
+section#our {
+    display: flex;
+    flex-direction: column;
+    background-color: #748d92;
+    border-radius: 20px;
+}
+.all {
+    display: flex;
+    flex-direction: row;
+}
+.formore {
+    background-color: #2e3944;
+    width: 25%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.pages {
+    margin: 5px;
+    padding: 5px;
+    width: 75%;
+}
+.pages div {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.feed {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+.feed div {
+    margin: 10px;
+    padding: 10px;
+    background-color: #d3d9d4;
+    border-radius: 10px;
+    color: #212A31;
+}
+.feed div:hover {
+    padding: 15px;
+    color: #124E66;
+}
+.cards div {
+    background: #d3d9d486;
+    padding: 5px;
+    border-radius: 20px;
+    height:fit-content;
+    margin-left: 10%;
+}
+.cards {
+    display: grid;
+    grid-template-columns:30% 30% 30% ;
+    grid-gap: 3% ;
+    height:500px ;
+    overflow-y:scroll;
+}
+.cards div img {
+    width: 80%;
+    border-radius: 10px;
+}
