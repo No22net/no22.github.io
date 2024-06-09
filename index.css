@@ -183,17 +183,107 @@ section#our {
     background: #d3d9d486;
     padding: 5px;
     border-radius: 20px;
-    height:fit-content;
-    margin-left: 10%;
+    margin: 5%;
 }
 .cards {
     display: grid;
-    grid-template-columns:30% 30% 30% ;
-    grid-gap: 3% ;
+    grid-template-columns:repeat(auto-fill, minmax(180px , 250px)) ;
+    grid-template-rows: repeat(auto-fill, minmax(300px , 350px)) ;
+    grid-gap: 1% ;
     height:500px ;
     overflow-y:scroll;
 }
 .cards div img {
-    width: 80%;
+    width: 75%;
     border-radius: 10px;
+}
+.hamberger {
+    display: none;
+}
+.oralogo {
+    width: 480px;
+}
+.azenox {
+    color: #08aef0;
+}
+.ano22 {
+    color: gold;
+}
+.ababy {
+    color: #124E66;
+}
+
+
+@media (max-width: 768px) {
+    * {
+        font-size:medium;
+    }
+    .hamberger {
+        display: block;
+        width: 50px;
+    }
+    .navbar a img{
+        margin: 5px;
+        width: 50px;
+    }
+    nav {
+        display: none;
+    }
+    .notop {
+        font-size: medium;
+        padding-top: 0;
+        margin-top: 5px;
+    }
+    .main-header {
+        height: 45px;
+    }
+    .oralogo {
+        width: 360px;
+    }
+    .hamberger i {
+        font-size: 2rem;
+        margin: 5px 0;
+    }
+    .cards {
+        font-size: smaller;
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax(100px , 150px)) ;
+        grid-template-rows: repeat(auto-fill, minmax(100px , 150px)) ;
+        height:500px ;
+        overflow-y:scroll;
+    }
+    .cards div img {
+            width: 65%;
+            border-radius: 10px;
+        }
+    .all {
+            display: flex;
+            flex-direction: column;
+        }
+    .feed {
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: row;
+        }
+    .pages {
+            margin: 5px;
+            padding: 5px;
+            width: 95%;
+        }
+        .formore {
+            background-color: #2e3944;
+            width: 95%;
+            margin: 2.5%;
+            display: flex;
+            flex-direction: column;
+            overflow-x:scroll;
+        }
+        .feed div {
+            width: 100px;
+        }
+        
+    
 }
